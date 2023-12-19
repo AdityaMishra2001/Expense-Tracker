@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="nstyle.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3><u>EXPENSE TRACKER</u></h3>
+      <p>Manage all your expenses</p>
+      <hr />
+
+      <form id="myform">
+        <div class="all-text">
+          <label for="Expense" class="form-label"
+            ><strong>Choose Expense Amount:</strong></label
+          >
+          <input
+            type="number"
+            id="expense"
+            name="Expense"
+            placeholder="Enter the Amount"
+            class="form-control"
+          />
+
+          <label for="email"><strong>Choose Description:</strong></label>
+          <input
+            type="text"
+            id="descrip"
+            name="Description"
+            placeholder="Expense Description"
+            class="form-control"
+          />
+
+          <div class="c-text">
+            <label for="description"><strong>Choose a Category</strong></label
+            ><br />
+            <select id="category" name="category" required>
+              <option value="Movie">Movie</option>
+              <option value="Grocery">Grocery</option>
+              <option value="Fuel">Fuel</option>
+              <option value="Food">Food</option>
+            </select>
+          </div>
+        </div>
+        <br />
+
+        <div class="submit-text">
+          <input
+            type="submit"
+            value="Add Expense"
+            class="btn btn-primary"
+            onclick=""
+          />
+        </div>
+      </form>
+    </div>
+
+    <br /><br />
+
+    <div class="box">
+      <br /><br />
+      <p class="output" id="div"></p>
+    </div>
+
+    <script src="expense.js"></script>
+  </body>
+</html>
